@@ -1,0 +1,16 @@
+﻿<Window x:Class="Gas_Station.View_Shifts1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gas_Station"
+        mc:Ignorable="d"
+        Title="View_Shifts1" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textBoxFilter" HorizontalAlignment="Left" Height="23" Margin="63,20,-25.6,0" TextWrapping="Wrap" Text="{Binding SearchTerm, Mode=OneWayToSource}" VerticalAlignment="Top" Width="165" Grid.ColumnSpan="2" TextChanged="TextBoxFilter_TextChanged"/>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding GridView, Mode=TwoWay}" SelectedItem="{Binding SelectedShift}" HorizontalAlignment="Left" Height="254" Margin="36,65,0,0" VerticalAlignment="Top" Width="549" SelectionChanged="GridDeals_SelectionChanged"/>
+        <Button  x:Name="View" Content="View Shift" HorizontalAlignment="Left" Margin="661,113,-2.4,0" VerticalAlignment="Top" Width="135" Height="46" Click="View_Click"/>
+        <Button  x:Name="Delete" Content="Delete Shift" HorizontalAlignment="Left" Margin="661,200,-0.4,0" VerticalAlignment="Top" Width="133" Height="66" Click="Delete_Click"/>
+
+    </Grid>
+</Window>

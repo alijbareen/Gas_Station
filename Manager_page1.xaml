@@ -1,0 +1,16 @@
+﻿<Window x:Class="Gas_Station.Manager_page1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gas_Station"
+        mc:Ignorable="d"
+        Title="Manager_page1" Height="450" Width="800">
+    <Grid>
+        <Button Content="משמרות" HorizontalAlignment="Left" Margin="479,86,0,0" VerticalAlignment="Top" Width="191" Height="77" Click="Button_Click"/>
+        <Button Content="עובדים" HorizontalAlignment="Left" Margin="177,86,0,0" VerticalAlignment="Top" Width="196" Height="77" Click="Button_Click_1"/>
+        <Button Content="יציאה" HorizontalAlignment="Left" Margin="46,273,0,0" VerticalAlignment="Top" Width="159" Height="85" Click="Button_Click_3"/>
+        <Button Content="עדכון DB" HorizontalAlignment="Left" Margin="169,188,0,0" VerticalAlignment="Top" Width="210" Height="55" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>

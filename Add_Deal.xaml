@@ -1,0 +1,27 @@
+﻿<Window x:Class="Gas_Station.Add_Deal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gas_Station"
+        mc:Ignorable="d"
+        Title="Add_Deal" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="deal_total" HorizontalAlignment="Left" Height="51" Margin="494,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="633,52,0,0" TextWrapping="Wrap" Text="Total" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="deal_type" HorizontalAlignment="Left" Margin="101,104,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBoxItem_SelectionChanged">
+            <ComboBoxItem Content="מזומן" HorizontalAlignment="Left" Width="118.4" Selected="ComboBoxItem_Selected_1"/>
+            <ComboBoxItem Content="visa" HorizontalAlignment="Right" Width="118" Selected="ComboBoxItem_SelectionChanged" Margin="0,0,0.4,0"/>
+            <ComboBoxItem Content="visa+" HorizontalAlignment="Left" Width="118.4" Selected="ComboBoxItem_Selected"/>
+            <ComboBoxItem Content="ארנק" HorizontalAlignment="Left" Width="118.4" Selected="ComboBoxItem_SelectionChanged"/>
+            <ComboBoxItem Content="תג הקפה" HorizontalAlignment="Left" Width="118.4" Selected="ComboBoxItem_Selected_2"/>
+            <ComboBoxItem Content="אחר" HorizontalAlignment="Left" Width="118.4"/>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="101,52,0,0" TextWrapping="Wrap" Text="סוג עסקה" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="633,139,0,0" TextWrapping="Wrap" Text="הערות" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.168,0.183"/>
+        <TextBox x:Name="deal_desc" HorizontalAlignment="Left" Height="62" Margin="494,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="117"/>
+        <Button Content="הוסף עסקה" HorizontalAlignment="Left" Margin="73,193,0,0" VerticalAlignment="Top" Width="167" Height="76" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>

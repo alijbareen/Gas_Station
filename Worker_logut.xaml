@@ -1,0 +1,17 @@
+﻿<Window x:Class="Gas_Station.Worker_logut"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gas_Station"
+        mc:Ignorable="d"
+        Title="Worker_logut" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="mish1" HorizontalAlignment="Left" Height="55" Margin="536,100,0,0" TextWrapping="Wrap" Text="michal1" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="mish2" HorizontalAlignment="Left" Height="55" Margin="135,100,0,0" TextWrapping="Wrap" Text="michal2" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="mish3" HorizontalAlignment="Left" Height="55" Margin="536,235,0,0" TextWrapping="Wrap" Text="michal3" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="mish4" HorizontalAlignment="Left" Height="55" Margin="135,235,0,0" TextWrapping="Wrap" Text="micha4" VerticalAlignment="Top" Width="151" TextChanged="Mish4_TextChanged"/>
+        <Button Content="finish" HorizontalAlignment="Left" Margin="323,334,0,0" VerticalAlignment="Top" Width="151" Height="56" Click="Button_Click"/>
+
+    </Grid>
+</Window>
